@@ -3,23 +3,272 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNlQ5cZRSqJKi1K_4x47acadSj0r7_SHmHzQ&s" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
     <link href="./output.css" rel="stylesheet" />
-    <title>Welcome to MySLT – Self-care account for SLTMobitel Home customers</title>
+    <title>
+      Welcome to MySLT – Self-care account for SLTMobitel Home customers
+    </title>
   </head>
-  <body>
-    <header class="bg-[#0056a3] px-3 sm:px-20 py-3 flex items-center justify-between ">
-        <img class="" src="./img/logo.png" alt="logo">
-        <div class="flex items-center justify-between gap-x-4 text-gray-200 font-semibold text-sm sm:text-lg">
-            <h1 class="hidden sm:block">My SLT Portal</h1>
-            <select name="" id="" class="border rounded-full py-1.5 px-4 ">
-                <option value="0212244648">0212244648</option>
-                <option value="0212215458">0212215458</option>
-            </select>
-            <div class="flex justify-center items-center  h-10 w-10 sm:h-12 sm:w-12 bg-emerald-900 rounded-full text-2xl">
-                <h1>S</h1>
-            </div>
+  <body class="bg-[url('./img/bg.png')]">
+    <header
+      class="bg-[#0056a3] px-3 sm:px-20 py-3 flex items-center justify-between"
+    >
+      <img class="" src="./img/logo.png" alt="logo" />
+      <div
+        class="flex items-center justify-between gap-x-4 text-gray-200 font-semibold text-sm sm:text-lg"
+      >
+        <h1 class="hidden sm:block">My SLT Portal</h1>
+        <select
+          name=""
+          id=""
+          class="border rounded-full py-1.5 px-4 bg-[#0056a3]"
+        >
+          <option value="0212244648">0212244648</option>
+          <option value="0212215458">0212215458</option>
+        </select>
+        <div
+          class="flex justify-center items-center h-10 w-10 sm:h-12 sm:w-12 bg-emerald-900 rounded-full text-2xl"
+        >
+          <h1>S</h1>
         </div>
+      </div>
     </header>
+
+    <main class="p-3 sm:px-20 sm:py-10">
+      <section class="flex gap-x-3">
+        <div class="flex flex-col justify-center space-y-3 w-2/3">
+          <div class="flex items-center gap-x-2">
+            <div
+              class="flex items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#008bee] rounded-lg shadow-lg w-1/5"
+            >
+              <img
+                src="data:image/png;base64,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"
+                alt="Broadband image"
+                class="w-8 h-8"
+              />
+              <h1>Broadband</h1>
+            </div>
+
+            <div
+              class="flex items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#1558ad] hover:bg-[#008bee] transition rounded-lg shadow-lg w-1/5"
+            >
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAa1JREFUWIXt109rE0EYx/Hf88zMbjaJm7TYgEVE0EPTW08mIhQPvgBfSBVy6FGK+ALEV5KTILl4s6fSS+8thZ6sJlKTNNnM00O1SROSbNqFpXQ+p/0zs/PdZVlYwHGc+4Web331jVZvwycPXmlPF9IOGicWpwOxH7RReju7nPlYeBym3TTV35/tdS2QFTZ8eUQAO7DpVo1gxQABzFzSoydEBIeN/bS6Jjx6sYZgOQsA4JRbYnOhSXOhSXOhSXOhSXOhSXOhSXOhSXOhSbszodd+RcDAaqWcUsokL+9fbWsidOXf/xyBkFkKUsqahXq6Hw2+dH538u1Tr8qK/fmTxlgEUX/wdNYQZpyxUcc3SRSLXu8sekc3mTyqXGtUjFE/jG9mLGZ39z5tVm+zjp4/ZD4/9BDMeGWibvTwtmss/ETL77+9KT4r1HOl3FUZMYho+qVEALEi//ejTr+Jo1bp+87rKO66iz9Rog0/72VZxb9HIoDU8E5MYJZOQj8E8CvuNRYO5WLz859D0wpKuSoICgDEiiKQT0wT32UBLCDtYbRIdG7rB7WXsSMdx7mPLgBoHGW4azoB7wAAAABJRU5ErkJggg=="
+                alt="Broadband image"
+                class="w-8 h-8"
+              />
+              <h1>PEOTV</h1>
+            </div>
+
+            <div
+              class="flex items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#1558ad] hover:bg-[#008bee] transition rounded-lg shadow-lg w-1/5"
+            >
+              <img
+                src="data:image/png;base64,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"
+                alt="Broadband image"
+                class="w-8 h-8"
+              />
+              <h1>Voice</h1>
+            </div>
+
+            <div
+              class="flex items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#1558ad] hover:bg-[#008bee] transition rounded-lg shadow-lg w-1/5"
+            >
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAApFJREFUWIXtWE1rE0EYft7dfDQfbf1IoyjoSQkperInDwpCf4AHQVBvggge1F/gKUVPHqWll+LJu+i5R7GCVTwIRS8VQqFJsWma7Lyvh/1w0qRkJi4E0zwwu8PszDzPvrPvLPMAYxxRkE3n2Udvy9nTUwuZwsQcuU6KRUEYEMUQJX6dGcLytyi/sEj0jD3UmFXl68L8UuxCLz59X8pNpteKl2YyoQBmXyC3FOAphVCQCkQF4tssrrCAwxdSQb3Ft9ZfzL8x4U+YCnU8uZsrZjNEBIF0vOLlY1m8vFlyDxt7b/kTvlV/gxCMBQAChPAEQMxCiQpO0o1IdKzvNHF96aO/rEo6oyZ+5DtA0X3alN9YqE5S/7FVb++2Gi6QmM4mCyQgEYEIAAGEg6iJIGzf3/f2dhpeTQA4CTfvpFOTNrT2QgHUN6pVr9m8AADb5sMyQQGlkt+z6aKVUMemcwirrSImDCR0GBgL7QvL72eEIxpjJpHFZCMc0SHBWqjNchlMZoxx1seNERY6jB89hhhR26Qc4aUfEsbbU9wYC40b/43QgU6h+bMnppr1xoZ/NoZvKbB/CY/MgHTUWcI+Ajc9cRyAVZgGEnqyfOaUbulEZoNu8+j2Ta82xf2JNAy+9L22l6BNGBL9eUh/TF19TTGY0MNECnCnNIPVB1fodrloN74P/imZuqKmBPevngMAPLx2HqEfdmDQQIg16yUBvP6wCQBYXP0Zzd73MzCAcTKxyBa3VUSi24c6+eLnX3i1tiki3F+JoGbKbxxRTtDKbnWvKfp69ooQEeCA/Jbu5InaBADouSm/VfzLj9/NZou5Sr6Ym6MEpViJZoVDc5kPWOOieaYsEE9tex6efancWLHhH+NI4g8nwGswqp73pAAAAABJRU5ErkJggg=="
+                alt="Broadband image"
+                class="w-8 h-8"
+              />
+              <h1>Mobile</h1>
+            </div>
+
+            <div
+              class="flex items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#1558ad] hover:bg-[#008bee] transition rounded-lg shadow-lg w-1/5"
+            >
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABJBJREFUWIXtmG1MW1UYx//PObe3UKAlGxvuA4sjZrChEQO6wRyCMYEtMxgM822ZWaLRL1vACBqybM2cxk3dIGimRr8bMk1MTMCZiZKZuTkWxUnE7MMCi1MYMMJavO295/EDbWGl9IUC1YR/cnN6z3nO8/x6Xp8WWNGK/tuiVAMEdf+h7pegVJFnwmi62r7TCG/XUgE1W5Xu7rQJ4ENW/DwTkOG0dQA4F26XUtDSN84VTML8DBYXhyqZbJFsxbJRhan0ze/3MlmXmFEc2zoFI1r+zg9rfZbVxoqfBsffb9lA6zs65ODQupf9ljoKIHuOAQHRwJce1M2iLPv8k4NDfISZC6PSRNGSgVa0X9hgsnqO+fw+VsgPbycQOAHoOaBF7g5dGjk1jlzHMzaHlk+CMgkgZgYrAGCwUoACTI869WNzWTsAVH7Sew9DlSmFYra43FK8BYpomoVjTm1CoPc2frs7K9vxkTPPmS206buAFc88zHe8K5+xBUB7AOUYM9WBF0ATx5cIgW5u+Obwqs1Od8bajMQDLYMEABQ2dNa5NiQJmcCJTHHe3EVNXTUA07T7+g5pS7e3utZnJcQVb7CA8YJEoMNFTWeOAIAoyHNWOFan5ZGI4S1F6Qszt2xs/CpfCAsP2Z321FAA8QyAkELWCiJyBXf4cmghS4YYawSIBy3DWvJgyUgBfwjF3OUdn4p+iqU2vR5lzfe5+L11xzXvTeNLv9e//AgxBoDBHih+auB47aQAAAl14ObA+BirJO64uLgSnBo/dvef2HEWCBzTV05UD02Ne6tG+kdHlKUWL1iSS+a3kzVjwc+h+2SgbUef7/pEwd8/j5zy/OWZUmZ04AhMQwD+SQ4tqv8IcrvFA3i4UHellwjNlktgAQBKBeADBVt09sKrW3uD3Srd3RpyMwtNRrli9SyYt7NiEUxioDBvghOysfjRX956rDs+0EVSxQcX8/ym+aJi7CeF7GiZ2IJBCw98XUICB0G4K1IPIlzvf6+6flND1wtkE4+A6ao3U2u75q66Fe6r5O1LLptu7GeFJlbsXAjovBm+1NhUjCeEJIAAEoGSZspNLT3raMp4UE+Xe0CAZigPgHfDffW+XjoB4GjJyZ5PJctjAO+JNkiRNG9ylnY7p5+IfNIuodk1SF1C0zWE3u0SuvC/L23CJvXpOqGL6mjBehsrblxs2rYXAjsJGF4U0N6PS/0M/Cp0eQecpgeg7Rp0p16Xvsa+T6ZN29gcWmk8QX9q3t5laPI+BjqTBgUAVrgkpYC0h8HaZ2Bn1wuSI/EG7mvaNnzZX7ELhNcAmKGGeRZjVFBB3KksDoHMfoKw1pQ6bd4y8v2Gsf5Cc/nGeEEBAG5Slw9WHifG4yBMArBYiT8jmUZd0He7u9OyDGvUtd7piLSZiAim3/JpN25nfOeuMqP5iqWSlp51ft1a3eeuupIwKABseuVMR07Bqnqpi2lIMRfWM+xtPd+wtTEZ0FiK/ZOM+Qu/xxdxMwWXgS1Lr11KSCCOf0pyXfrpsVFvmZ5l3yWk0CEC0xCcCwXL9JqHlpRyRSv6H+hfAgMALYrxHzcAAAAASUVORK5CYII="
+                alt="Broadband image"
+                class="w-8 h-8"
+              />
+              <h1>Promotion</h1>
+            </div>
+          </div>
+
+          <div
+            class="flex items-center border bg-[#0f3b7a] border-zinc-700 rounded-md text-white font-semibold text-[13px]"
+          >
+            <div class="border-r border-zinc-600 py-1 px-2">
+              <button class="py-2 px-4 bg-[#008bee] rounded-md">Summary</button>
+            </div>
+
+            <div class="border-r border-zinc-600 py-1 px-2">
+              <button class="py-2 px-4 hover:bg-[#008bee] rounded-md">
+                Daily Usage
+              </button>
+            </div>
+
+            <div class="border-r border-zinc-600 py-1 px-2">
+              <button class="py-2 px-4 hover:bg-[#008bee] rounded-md">
+                Gift Data
+              </button>
+            </div>
+
+            <div class="border-r border-zinc-600 py-1 px-2">
+              <button class="py-2 px-4 hover:bg-[#008bee] rounded-md">
+                History
+              </button>
+            </div>
+
+            <div class="border-r border-zinc-600 py-1 px-2">
+              <button class="py-2 px-4 hover:bg-[#008bee] rounded-md">
+                Reedam Data
+              </button>
+            </div>
+
+            <div class="border-r border-zinc-600 py-1 px-2">
+              <button class="py-2 px-4 hover:bg-[#008bee] rounded-md">
+                Happy Day
+              </button>
+            </div>
+
+            <div class="py-1 px-2">
+              <button
+                class="py-2 px-4 hover:bg-[#008bee] rounded-md flex items-center justify-between"
+              >
+                More
+                <span class="ml-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                  >
+                    <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                    <path
+                      fill="currentColor"
+                      d="M12 14.975q-.2 0-.375-.062T11.3 14.7l-4.6-4.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between gap-x-2">
+            <div
+              class="bg-[#0f3b7a] rounded-lg p-3 flex items-center justify-between text-white w-1/2"
+            >
+              <div>
+                <p class="font-semibold text-sm">Package : WEB FAMILY PLUS</p>
+                <p class="font-semibold text-sm">Status : Service barred</p>
+                <p class="font-semibold text-sm">Username : S.Banusa</p>
+              </div>
+
+              <button class="bg-[#1558ad] py-4 px-5 rounded-lg font-semibold">
+                Package Upgrade
+              </button>
+            </div>
+
+            <div
+              class="flex items-center justify-between p-3 bg-[#0f3b7a] rounded-lg text-white font-semibold w-1/2"
+            >
+              <button class="bg-[#1558ad] py-4 px-7 rounded-lg font-semibold">
+                Get Extra GB
+              </button>
+              <button class="bg-[#1558ad] py-4 px-7 rounded-lg font-semibold">
+                Get Data Add-ons
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex justify-between items-center w-1/3 bg-[#0f3b7a] rounded-md flex-wrap p-2 gap-1"
+        >
+          <div
+            class="flex flex-col justify-center items-center bg-[#1558ad] w-30 h-25 rounded-md"
+          >
+            <img
+              class="h-8 w-8"
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <h1 class="text-sm mt-1 text-gray-400 font-semibold">
+              New Services
+            </h1>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center bg-[#1558ad] w-30 h-25 rounded-md"
+          >
+            <img
+              class="h-8 w-8"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABTNJREFUWIW1lmlsVFUUx3/nvulMKbsGNUhYiwRIWGwROhQBQwIFWT4AIiEpoEkTiIFPQFtIhmChhIZEokaIshlFrZIoMGULRUM7spWyE4gKZTEYoAh0aGfmveOHLjSk05lBOF/e3Hv+539/77z75j7hGWLK2iPtIxErC5wBwOsiRlWdW2AuuFx2yS9LMx8m6imJiCevOtrLsSKrFJkOeBqmaxuuyQ3XOkSKHVixNzfjarzeJl7hxILyRbZlX1JkpsJ3wGR3qK6zP8/bxp/nbSNiv6SOTEH4HtVZRvXSpILAR/H6x9WRiQWBzxBdoHBYsHL8ecMvt6afsOpIP2OZjcBogU/35HljAsUEyVodWCLoWpAtt19OyjmZkx5uAvy4rIdYpq/tqCZZzpVdyzKrGnNpG08kvXqvbhMqc1GW+PO9654ZJGtN+VBRTigcaJd6Y1LxzJk2wKSC8vEqFABpT5UcR02+P3/EAYAxvlJXitvtB3nHGDtt97JRp6Ot1eoeEaVQICgu19xGiImry5arUKLQU6FIRWah8p5CEdAHcfZlrQ7kARz2jY3YamcDtY5jFT5TR8avKU+1lCsoa/z53rz6TpTNUZGvQUrtkE5fNjrjQUrX+wMBgrc6nd8QONaxFvtHgTEIs/253h0AWQWBQhFdqramlqwY+UdCHXEp0+pJ9VuAGevL26jIOuCqhmTayjkDeqV0q74oRivFaGVKt+qLS2f260nITAWuqVI0xleaDGBZkR0AYsyUaOtFBVE0HfhnT/7IcwCPgjIOeE1E1xXN6O0YdXYKpDbqBVKNOjuLZvR2UNYJdE1xe8YB7F426jSqdxAdljAISFeFG01DS4fUV5jSGo+VCXQP1obZtvsUG386zt1/gwDdH7mtkeKSQwAqDH1iJ9eBrs8AQhujGmzyUVIANOwERWkHUH6misDZKk5dvkXgbFWjYXujdk3zmvrfWgO0TRhE4a4a6dLsjq4BYEl/CTtlQLAuFGlKOw4AQQk7ZRHbGtgwfbXJT3gFuJMwiKDnUfqOKzzRsX4c2Q+E1Zak9AFd/kZlYShi200gatsqsqA+hwsIi9gHAKb5SjuBpCKcTRxEOQQYt1M3BWBP7qg/QUaVLM/YBfDWG523Hj93Y3uj/ti5m18NT+28DaBkecYu45BZXwNhd/JUwKgjpQmD1IRD+4Abiiz2+dQA+PMyjjbX3Hv4uGkPVT94XN08t3u59xiAz6dG0cVAVbu+1/cnDHLYNzYiomsEhhxLKh/UkkaeHP1oFK+jnsBgYJAihY3/zi2FK1oCYFid94vf3WVX9+ZnVraUVxEPqo2j1LT5m7epSnU42b3S1ERSTm/PvlmS6z01YfWRySNCI/eWtLJWQh9GT0fa/K3Fik5vIfUA6IDyiRrZGfLUVJz/fOGj1rzi/jBqKVTVEyXVAQBhkaj+6qlN2RPLq9VH0zzSPtgyQxUvmN8quv/1Mz6fo5AcZ0tHxBLE5ZOWvbWPWnqZJx08HTGRd12O6xvg7TgswhWb57lbE8T1aGzRu0DzDTvY5bgOgnaJVpPoOnGBVG6dd19coRGgm5pN9wPpHyeI81xAAE5uygl36F61EORIvDVPQuqeGwjAYZ8vYqkzGyTq4RUlamMJEn59j2+Zf11x3gfCMcVNoc+3I41xavP8gyBziONOG+L2CwEBqNg89weMGQ5ciKUVKH5hIAAVX2af8Txsm67oBpBISxoV/LUP266P5fW/zprm8eaH2/urY2cZ6AskOWiNKocqe1TtwueL+fr+B/MnHVPQTj96AAAAAElFTkSuQmCC"
+              alt=""
+            />
+            <h1 class="text-sm mt-1 text-gray-400 font-semibold">
+              Digital Life
+            </h1>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center bg-[#1558ad] w-30 h-25 rounded-md"
+          >
+            <img
+              class="h-8 w-8"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABNdJREFUWIW9ls9vVUUUxz8zd+6Pea/tK1V+KBBEQTSoiIgYTaTiRqOyIDYxJCbGhQs3bly6MP4L7nSlMbhg4ZK4MSa6EDCmiLUS+dFWhBal8Ppe37t35t57XLxXyo9KJS39JjeZO3fm3M+cOefMKK7Tk3sObqWy6n2CoK1mGz8X4k+JKc+d/OHQFe6y1FxjcPDtpF69/6Jau6W/0y2QO8S1wbWdyv3lMk/Pk2d/KNc6Sdo4oVV5rt5/9dzpI0eyZQPZsefgi8G2F77VcQUTxRTeU+Y5giw8sywR10b5FpKnTfH+kirSMXHZKLON4bL0p1By7pejWy/AR+ViIGauIXF1Fyam2j9AddVAp0+Ewnty7yi8o/B+/j33qKQKSRUFPQp6gAcV7APQhQfXZufGdkn+8VXx7qLy6VnydETa9Z91WZzNrD818t3h5g0gQdzzBEAQhvPuUgoTRZgounUJIhR53oXMKXNH7j25y8idhyAEG6JsnwYGFAwA24HXVVkiWYPo8kT+5LMHvw68vHcNBBNvvRnktlKKIAwXHr8YpNYoW4P1jxtpN4YKaeXzIFG8oQOywOrvVLeBFBGa0/8we2UaFKjAIMij+tqIIFqtdIDW+pbJyymlFDfEv2shcEYDbHv+nV7CJDb/d1uWqNy5TqNwSOHRMKoBrEsfUlHl/8fHUkF8FySdBUAUv2sAFZothPGKgIgIm9f2sO+pTYhrAaClC0LSvwsUgVmGQF1EhXcc2LuVoX2PQDYLIJn1pzogUbwdIAjNbUwsj3LneGBdjYnJOrgWCs6PfHe42dkaE28GMMuRuouBeMfGNX2MT80gWROBUehW1tLE92sUgVkZj3x+5CTfn5gAnyLwO4AGlDZxLQgNKLWImaXr3qrhvnt6mJr8B0TQqguy8/k37yNKgpXYFgR2P7yaA4PbkE6gUkoXRIpgM6FdkUAtC8+mdb2MT9Yh66RuVPpRAB3ElR0EZkVSN3ee9au7IL4JcPX48cOTAEbivh1wB6fukkAcX34zQqPlIG1dC1QALSbetmIgPuPA3ofJfIF0asg8CGG4CSAI7n6M9FvNa89tYaBqoPCImgcxiEQAVyYvEFcqhIklSizqLlwHNgxYAMbHLwCg5DqQcvrPD3VY+czLmsCn7U6v6lTZyFoiWyWyFr1Ej0lZsqbfMj3Tpj49DUBZ6GsgwdTE8PDGnlWf5jOXLqisWVEuXS1Kh6ICfJaRNhvMXr1CuzFDnqWURYkyAVoHdwSSZylnzv7Fsd8uMjV2Btp1t6r61wdjY2Nld+236vHdBx/USfSqqtyzXyd9e8T29Spbu6HyBsZ0t7FCaBPCKPkPax21G3XqU5Md70wMI42/fxs+emj73PcF/X3y+KGzwCfdZx7MDryhbW232D5b2BpFnpM2GwBoExBGltBaYmsxcdK5Fs55ZO5WBkg6e0PG/CfIHYElfc9IpZaUtkaWN8laTZqA0poosR2vWYtrd+NPSsjbiKjR6/+x5FNuaGgoOD0e7CSsvELvwH7i3idUpT/C9i5oXtIGcuZHBHnrxNGvvlw2kJs1ODhoZtrrnya0L1Ot7Zek9zEq/aFK+jog539FZiZPR2KePXbsi8t3DeRm7dr1bliEs8+owLyk0L1F4X7KG+7rkZHD7vpx/wIVNzcj4o2z0QAAAABJRU5ErkJggg=="
+              alt=""
+            />
+            <h1 class="text-sm mt-1 text-gray-400 font-semibold">Hot Movies</h1>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center bg-[#1558ad] w-30 h-25 rounded-md"
+          >
+            <img
+              class="h-8 w-8"
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <h1 class="text-sm mt-1 text-gray-400 font-semibold">Bill</h1>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center bg-[#1558ad] w-30 h-25 rounded-md"
+          >
+            <img
+              class="h-8 w-8"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABBhJREFUWIW9l29M1VUYxz/Puf8wRJ3Vyl7IGviqzQnENMSlzU1QXM0Z0mYDgVlbpetNBcm6/REkekG1Vi/q3llWE6e5YUKtoq2JtCTmmjZfwELHWlpKKiY/7j1PL7gg93L/Qdh3u9s95/c9z/M55/7Oc84VEqhkX0+xsXYTkAN4gPmJvAphlEGD/mDGfEfa/Q/eSORNJInt2Lj3xApEPgBWzjRYRMOgr2TmDr13qLw8PCuQTY0ntyh6AJg3S4ipkdtdo96KdFfHTEI0nVyv6OdzAgGgbA57nYN+v5rU5gjIBn/3YlU9AHjnBOKWyn70dD+fNojLxx7gnjmGAEBEGja/dequlCBr/V3zUWpvB0REC0OOsz2VyZ3pzXhE0azYBwqtRuieSUa1eBBagbun9ovINqA1KQjYlXF2MQaGwAzMBAQNCcYMo9EgqOat9Xe5v/evCyUEUeE+NE5MaEHtjDgwhnixAN88lzcb6E84FOTOmWWbnaxbpi/7FLmBK/8HiFesU1gVvNe6dLuxHPwpWH0hFuSPBGPbRPTnRIFVZRHwAlOKYhLZ0E33sDWmQNW2hIXXC6qDr/YGqppBFMAtKj0a54dV5UsR2z4toqrbiGSJy+3TsD4HZKbmkF86/KuuFtQEl0dSZSg05VUHl/QF2A1gPM7N74Bp54EI+1Vdl2M/gvuiqqtfw3o2PQgQ9EhkciXR/bIrf0dg2/h3YOPe7vcRnk4n6Cz0j7EsGxr4VQXzG+NXiltSzovHyTUAboyf2/XSijQf21M0ZDC7pkEACEttKGP95JYqbex+TOAw6b186eqbG85o6fXzAzkWcxrwxWWF5smkHfVFR0FrgbG5IBD41jHerZf7L/gs5rNEEAAK2VGzP16/OgiyBuj7DwxXEepHnNGSKwO9Yy5vuA3ITzHGE7/aqUrZvp6HrWo18GQCz5+IDEZafwv6O0iXxxk9fNS/bnhFVXCZMXwKFKYB35K07JY1nnjIIvFO4Es2bNd0NhSfi32QV/NhtqjrGeBZ0rztKfKoO5nBYmycU+yaiCntbCg6l18TeEpU7rciC4yyCNXlqjyQTvIpuuhcu6MzKYiKOhLN4ajo1uN1q3oBxBqfir4oGqnNSdc3QQ6k/syhcifpVhV1jUxpjhmhoqNu9dcTHb3ByncZ3/Kzkir7+wKVAUhRM3zwFzAKjCH6xLG6oi9iURcsHawQlTcivjQlIRV9bWH2YO3EoZdyMTc0deci1vfVS8VnkvkKdn6yhLHw41ZsjkCGYBYruoWYySr6jg253jz9ceVQFFr6s5i5CmqCu1Wj76qKLewL1JyK9c5lOZ+m3o92vK0qTVEg1sS9t95WEIC+YOXLKIGJtgvi/h9Oun3nRqI519t2DmSNXLKgOSOZZ3vjuP4Fs7CMyc5pYJ8AAAAASUVORK5CYII="
+              alt=""
+            />
+            <h1 class="text-sm mt-1 text-gray-400 font-semibold">Complaints</h1>
+          </div>
+
+          <div
+            class="flex flex-col justify-center items-center bg-[#1558ad] w-30 h-25 rounded-md"
+          >
+            <h1
+              class="text-sm mt-1 text-gray-400 font-semibold flex items-center"
+            >
+              More
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                >
+                  <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                  <path
+                    fill="currentColor"
+                    d="M12 14.975q-.2 0-.375-.062T11.3 14.7l-4.6-4.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l3.9 3.9l3.9-3.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213t-.375.062"
+                  />
+                </svg>
+              </span>
+            </h1>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
