@@ -34,11 +34,11 @@
       </div>
     </header>
 
-    <main class="flex gap-5 max-w-6xl mx-auto">
-      <section class="w-2/3 md:mt-8 flex flex-col gap-y-3">
-        <div class="flex justify-between gap-x-1">
+    <main class="flex flex-col sm:flex-row gap-5 max-w-6xl mx-auto">
+      <section class="sm:w-2/3 w-full md:mt-8 my-3 flex-col gap-y-3 sm:flex">
+        <div class="flex justify-between gap-x-0.5">
           <div
-            class="flex items-center text-md text-gray-200 font-semibold gap-x-3 py-4 px-2 bg-[#008bee] rounded-lg shadow-lg"
+            class="flex flex-col sm:flex-row items-center text-md text-gray-200 font-semibold gap-x-3 py-4 px-2 bg-[#008bee] rounded-lg shadow-lg"
           >
             <img
               src="data:image/png;base64,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"
@@ -48,7 +48,7 @@
             <h1>Broadband</h1>
           </div>
           <div
-            class="flex items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#1558ad] hover:bg-[#008bee] transition rounded-lg shadow-lg"
+            class="flex flex-col sm:flex-row items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#1558ad] hover:bg-[#008bee] transition rounded-lg shadow-lg"
           >
             <img
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAa1JREFUWIXt109rE0EYx/Hf88zMbjaJm7TYgEVE0EPTW08mIhQPvgBfSBVy6FGK+ALEV5KTILl4s6fSS+8thZ6sJlKTNNnM00O1SROSbNqFpXQ+p/0zs/PdZVlYwHGc+4Web331jVZvwycPXmlPF9IOGicWpwOxH7RReju7nPlYeBym3TTV35/tdS2QFTZ8eUQAO7DpVo1gxQABzFzSoydEBIeN/bS6Jjx6sYZgOQsA4JRbYnOhSXOhSXOhSXOhSXOhSXOhSXOhSXOhSbszodd+RcDAaqWcUsokL+9fbWsidOXf/xyBkFkKUsqahXq6Hw2+dH538u1Tr8qK/fmTxlgEUX/wdNYQZpyxUcc3SRSLXu8sekc3mTyqXGtUjFE/jG9mLGZ39z5tVm+zjp4/ZD4/9BDMeGWibvTwtmss/ETL77+9KT4r1HOl3FUZMYho+qVEALEi//ejTr+Jo1bp+87rKO66iz9Rog0/72VZxb9HIoDU8E5MYJZOQj8E8CvuNRYO5WLz859D0wpKuSoICgDEiiKQT0wT32UBLCDtYbRIdG7rB7WXsSMdx7mPLgBoHGW4azoB7wAAAABJRU5ErkJggg=="
@@ -58,7 +58,7 @@
             <h1>PEOTV</h1>
           </div>
           <div
-            class="flex items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#1558ad] hover:bg-[#008bee] transition rounded-lg shadow-lg"
+            class="flex flex-col sm:flex-row items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#1558ad] hover:bg-[#008bee] transition rounded-lg shadow-lg"
           >
             <img
               src="data:image/png;base64,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"
@@ -68,7 +68,7 @@
             <h1>Voice</h1>
           </div>
           <div
-            class="flex items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#1558ad] hover:bg-[#008bee] transition rounded-lg shadow-lg"
+            class="flex flex-col sm:flex-row items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#1558ad] hover:bg-[#008bee] transition rounded-lg shadow-lg"
           >
             <img
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAApFJREFUWIXtWE1rE0EYft7dfDQfbf1IoyjoSQkperInDwpCf4AHQVBvggge1F/gKUVPHqWll+LJu+i5R7GCVTwIRS8VQqFJsWma7Lyvh/1w0qRkJi4E0zwwu8PszDzPvrPvLPMAYxxRkE3n2Udvy9nTUwuZwsQcuU6KRUEYEMUQJX6dGcLytyi/sEj0jD3UmFXl68L8UuxCLz59X8pNpteKl2YyoQBmXyC3FOAphVCQCkQF4tssrrCAwxdSQb3Ft9ZfzL8x4U+YCnU8uZsrZjNEBIF0vOLlY1m8vFlyDxt7b/kTvlV/gxCMBQAChPAEQMxCiQpO0o1IdKzvNHF96aO/rEo6oyZ+5DtA0X3alN9YqE5S/7FVb++2Gi6QmM4mCyQgEYEIAAGEg6iJIGzf3/f2dhpeTQA4CTfvpFOTNrT2QgHUN6pVr9m8AADb5sMyQQGlkt+z6aKVUMemcwirrSImDCR0GBgL7QvL72eEIxpjJpHFZCMc0SHBWqjNchlMZoxx1seNERY6jB89hhhR26Qc4aUfEsbbU9wYC40b/43QgU6h+bMnppr1xoZ/NoZvKbB/CY/MgHTUWcI+Ajc9cRyAVZgGEnqyfOaUbulEZoNu8+j2Ta82xf2JNAy+9L22l6BNGBL9eUh/TF19TTGY0MNECnCnNIPVB1fodrloN74P/imZuqKmBPevngMAPLx2HqEfdmDQQIg16yUBvP6wCQBYXP0Zzd73MzCAcTKxyBa3VUSi24c6+eLnX3i1tiki3F+JoGbKbxxRTtDKbnWvKfp69ooQEeCA/Jbu5InaBADouSm/VfzLj9/NZou5Sr6Ym6MEpViJZoVDc5kPWOOieaYsEE9tex6efancWLHhH+NI4g8nwGswqp73pAAAAABJRU5ErkJggg=="
@@ -78,7 +78,7 @@
             <h1>Mobile</h1>
           </div>
           <div
-            class="flex items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#1558ad] hover:bg-[#008bee] transition rounded-lg shadow-lg"
+            class="flex flex-col sm:flex-row items-center text-md text-gray-200 font-semibold gap-x-3 p-4 bg-[#1558ad] hover:bg-[#008bee] transition rounded-lg shadow-lg"
           >
             <img
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABJBJREFUWIXtmG1MW1UYx//PObe3UKAlGxvuA4sjZrChEQO6wRyCMYEtMxgM822ZWaLRL1vACBqybM2cxk3dIGimRr8bMk1MTMCZiZKZuTkWxUnE7MMCi1MYMMJavO295/EDbWGl9IUC1YR/cnN6z3nO8/x6Xp8WWNGK/tuiVAMEdf+h7pegVJFnwmi62r7TCG/XUgE1W5Xu7rQJ4ENW/DwTkOG0dQA4F26XUtDSN84VTML8DBYXhyqZbJFsxbJRhan0ze/3MlmXmFEc2zoFI1r+zg9rfZbVxoqfBsffb9lA6zs65ODQupf9ljoKIHuOAQHRwJce1M2iLPv8k4NDfISZC6PSRNGSgVa0X9hgsnqO+fw+VsgPbycQOAHoOaBF7g5dGjk1jlzHMzaHlk+CMgkgZgYrAGCwUoACTI869WNzWTsAVH7Sew9DlSmFYra43FK8BYpomoVjTm1CoPc2frs7K9vxkTPPmS206buAFc88zHe8K5+xBUB7AOUYM9WBF0ATx5cIgW5u+Obwqs1Od8bajMQDLYMEABQ2dNa5NiQJmcCJTHHe3EVNXTUA07T7+g5pS7e3utZnJcQVb7CA8YJEoMNFTWeOAIAoyHNWOFan5ZGI4S1F6Qszt2xs/CpfCAsP2Z321FAA8QyAkELWCiJyBXf4cmghS4YYawSIBy3DWvJgyUgBfwjF3OUdn4p+iqU2vR5lzfe5+L11xzXvTeNLv9e//AgxBoDBHih+auB47aQAAAl14ObA+BirJO64uLgSnBo/dvef2HEWCBzTV05UD02Ne6tG+kdHlKUWL1iSS+a3kzVjwc+h+2SgbUef7/pEwd8/j5zy/OWZUmZ04AhMQwD+SQ4tqv8IcrvFA3i4UHellwjNlktgAQBKBeADBVt09sKrW3uD3Srd3RpyMwtNRrli9SyYt7NiEUxioDBvghOysfjRX956rDs+0EVSxQcX8/ym+aJi7CeF7GiZ2IJBCw98XUICB0G4K1IPIlzvf6+6flND1wtkE4+A6ao3U2u75q66Fe6r5O1LLptu7GeFJlbsXAjovBm+1NhUjCeEJIAAEoGSZspNLT3raMp4UE+Xe0CAZigPgHfDffW+XjoB4GjJyZ5PJctjAO+JNkiRNG9ylnY7p5+IfNIuodk1SF1C0zWE3u0SuvC/L23CJvXpOqGL6mjBehsrblxs2rYXAjsJGF4U0N6PS/0M/Cp0eQecpgeg7Rp0p16Xvsa+T6ZN29gcWmk8QX9q3t5laPI+BjqTBgUAVrgkpYC0h8HaZ2Bn1wuSI/EG7mvaNnzZX7ELhNcAmKGGeRZjVFBB3KksDoHMfoKw1pQ6bd4y8v2Gsf5Cc/nGeEEBAG5Slw9WHifG4yBMArBYiT8jmUZd0He7u9OyDGvUtd7piLSZiAim3/JpN25nfOeuMqP5iqWSlp51ft1a3eeuupIwKABseuVMR07Bqnqpi2lIMRfWM+xtPd+wtTEZ0FiK/ZOM+Qu/xxdxMwWXgS1Lr11KSCCOf0pyXfrpsVFvmZ5l3yWk0CEC0xCcCwXL9JqHlpRyRSv6H+hfAgMALYrxHzcAAAAASUVORK5CYII="
@@ -90,7 +90,7 @@
         </div>
 
         <div
-          class="border bg-[#0f3b7a] border-zinc-700 rounded-md text-white font-semibold text-[13px]"
+          class="border bg-[#0f3b7a] border-zinc-700 rounded-md text-white font-semibold text-[13px] my-2 sm:my-0"
         >
           <table class="w-full">
             <tr class="flex items-center justify-between">
@@ -168,9 +168,11 @@
           </table>
         </div>
 
-        <div class="flex items-center justify-between gap-x-2">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-between gap-2"
+        >
           <div
-            class="bg-[#0f3b7a] rounded-lg p-3 flex items-center justify-between text-white w-1/2 h-20"
+            class="bg-[#0f3b7a] rounded-lg p-3 flex items-center justify-between text-white w-full sm:w-1/2 h-20"
           >
             <div>
               <p class="font-semibold text-[13px] whitespace-nowrap">
@@ -188,7 +190,7 @@
           </div>
 
           <div
-            class="flex items-center justify-between p-3 bg-[#0f3b7a] rounded-lg gap-3 text-white font-semibold w-1/2 text-sm h-20"
+            class="flex items-center justify-between p-3 bg-[#0f3b7a] rounded-lg gap-3 text-white font-semibold sm:w-1/2 w-full text-sm h-20"
           >
             <button
               class="bg-[#1558ad] py-4 px-6 lg:px-5 rounded-lg font-semibold flex-1/2 whitespace-nowrap"
@@ -204,7 +206,7 @@
         </div>
       </section>
 
-      <section class="w-1/3 md:mt-8">
+      <section class="sm:w-1/3 w-full md:mt-8">
         <div
           class="flex flex-col justify-between w-full bg-[#0f3b7a] h-fit rounded-md p-2 gap-1"
         >
@@ -302,9 +304,13 @@
       </section>
     </main>
 
-    <main class="flex gap-5 max-w-6xl mx-auto">
-      <section class="w-2/3 md:mt-8 flex gap-3 bg-[#0f3b7a] p-2 rounded">
-        <div class="flex flex-col text-white text-xs font-semibold w-1/4 gap-3">
+    <main class="flex flex-col sm:flex-row gap-5 max-w-6xl mx-auto">
+      <section
+        class="sm:w-2/3 w-full my-2 sm:my-0 md:mt-8 flex flex-col sm:flex-row gap-3 bg-[#0f3b7a] p-2 rounded"
+      >
+        <div
+          class="sm:flex flex-col hidden text-white text-xs font-semibold w-1/4 gap-3"
+        >
           <div class="text-center whitespace-nowrap bg-[#0083e0] rounded p-2">
             <h1>My Package</h1>
             <p>75.6 used from 100.0GB</p>
@@ -332,7 +338,7 @@
         </div>
 
         <div
-          class="flex flex-col items-center text-center text-white text-xs font-semibold w-3/4 gap-3 border border-zinc-600 rounded relative p-5"
+          class="flex flex-col items-center text-center text-white text-xs font-semibold sm:w-3/4 w-full gap-3 border border-zinc-600 rounded relative p-5"
         >
           <h1 class="text-lg font-normal">
             Your speed is
@@ -395,7 +401,7 @@
       </section>
 
       <section
-        class="w-1/3 md:mt-8 flex flex-col gap-3 bg-[#0f3b7a] p-2 rounded"
+        class="sm:w-1/3 w-full md:mt-8 flex flex-col gap-3 bg-[#0f3b7a] p-2 rounded"
       >
         <div
           class="w-full h-60 rounded overflow-hidden p-2 border-2 border-[#15d151]"
